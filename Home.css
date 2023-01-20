@@ -708,6 +708,13 @@ h1 {
 .logo{
   border-radius: 50%;
   position: fixed;
+  left: 67px;
+  top: 25px;
+  z-index: 100;
+}
+.logo1{
+  border-radius: 50%;
+  position: fixed;
   left: 17px;
   top: 25px;
   z-index: 100;
@@ -717,8 +724,8 @@ h1 {
   font-size: 0.4em;
   font-weight: 400;
   position: fixed;
-  left: 63px;
-  top: 35px;
+  left: 112px;
+  top: 33px;
   z-index: 100;
 }
 
@@ -918,7 +925,7 @@ h1 {
     }
 
     .sec2para{
-      margin-top: 22%;
+      margin-top: 15%;
       font-size: 0.4em;
       height: inherit;
     }
