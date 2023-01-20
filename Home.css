@@ -340,8 +340,11 @@ section:nth-child(3) {
   
 }
 section:nth-child(4) {
-  background: #F9690E;
-}
+  background-image: url('Images/section3bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+} 
 section:nth-child(5) {
   background: #9B59B6;
 }
@@ -738,12 +741,12 @@ h1 {
 
 #drag-container img, #drag-container video {
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 90%;
   line-height: 200px;
   font-size: 50px;
   text-align: center;
