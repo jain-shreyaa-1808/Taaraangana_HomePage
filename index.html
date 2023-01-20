@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="Home.css">
+
+  <!-- nav_button -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+
+    <title>Home </title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body data-spy="scroll" data-target="#navbar-example">
+  <!-- for new pr -->
+  <div></div>
+  <!-- button nav -->
+<div class="wrapper2">
+
+  <div class="container">
+    <div class="bars"></div>
+  </div>
+
+  <!-- <h1>Animated Nav With GSAP 3.0</h1> -->
+  <nav class="nav_ani" id="nav_ani">
+    <!-- <h2>TAARANGANA</h2> -->
+    <div class="close">
+      <div></div>
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Pronite</a></li>
+      <li><a href="#">Sponsors</a></li>
+      <li><a href="#">Meet the Team</a></li>
+    </ul>
+  </nav>
+
+  <script type="text/javascript">
+    
+    const open = document.querySelector('.container');
+    const close = document.querySelector('.close');
+    var tl = gsap.timeline({ defaults: { duration: 0.5, ease: 'expo.inOut' } });
+    open.addEventListener('click', () => {
+      if (tl.reversed()) {
+        tl.play();
+      } else {
+        tl.to('.nav_ani', { right: 0 })
+          .to('.nav_ani', { height: '100vh' }, '-=.1')
+          .to('.nav_ani ul li a', { opacity: 1, pointerEvents: 'all', stagger: .2 }, '-=.8')
+          .to('.close', { opacity: 1, pointerEvents: 'all' }, "-=.8")
+          .to('.nav_ani h2', { opacity: 1 }, '-=1');
+      }
+    });
+
+    close.addEventListener('click', () => {
+      tl.reverse();
+    });
+  </script>
+</div>
+
+
+    <!-- ADD CONTENT IN EACH SECTION ACCORDING TO PAGE -->
+
+
+  <div class="wrapper" >
+
+    <nav class="nav__wrapper" id="navbar-example">
+      <ul class="nav">
+
+        <li role="presentation" class="active" id="l1">
+          <a href="#section1">
+            <span class="nav__counter">01</span>
+            <!-- <h3 class="nav__title">HOME</h3> -->
+            <p class="nav__body"><strong>Timeline-style navigation</strong>. Scroll down to see what happens, or click on a number in the nav.</p>
+          </a>
+        </li>
+
+        <li role="presentation" class="l2">
+          <a   href="#section2">
+            <span class="nav__counter">02</span>
+            <!-- <h3 class="nav__title">ABOUT US</h3> -->
+            <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+          </a>
+        </li>
+
+        <li role="presentation" id="l3">
+          <a   href="#section3">
+            <span class="nav__counter">03</span>
+            <!-- <h3 class="nav__title">GLIMPSES</h3> -->
+            <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+          </a>
+        </li>
+        
+        <li role="presentation" id="l4">
+          <a  href="#section4">
+            <span class="nav__counter">04</span>
+            <!-- <h3 class="nav__title">Section 4 Title</h3> -->
+            <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+          </a>
+        </li>
+        
+       <!--  <li  role="presentation">
+          <a href="#section5">
+            <span class="nav__counter">05</span>
+            <h3 class="nav__title">Section 5 Title</h3>
+            <p class="nav__body">
+            Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+          </a>
+        </li>
+        
+        <li  role="presentation">
+          <a href="#section6">
+            <span class="nav__counter">06</span>
+            <h3 class="nav__title">Section 6 Title</h3>
+            <p class="nav__body">Sed sit amet justo sed odio tempus tempus. Vestibulum sed varius mi, sit amet condimentum lacus.</p>
+          </a>
+        </li> -->
+
+      </ul>
+    </nav>
+
+
+    
+
+    <section class="section section1" id="section1" >
+      <!-- <img class="Background" src="Images/BG.jpg"> -->
+      <video playsinline autoplay muted loop class="video-1">
+        <source src="Images/4K_2.mp4" type="video/mp4">
+   </video>
+      <div class="theme">
+        
+    <div class="sign">
+       
+      <span class="fast-flicker">taar</span>ang<span class="flicker">ana'</span>23
+    </div>
+      <span class="flicker">Querencia</span><br> 
+       <span class="fast-flicker">A momentous voyage glistening a decade</span>
+    </div>
+    
+     <img src="Images/taarangana logo.jpeg" class="logo" width="40" height="40">
+     <span class="logo_name">TAARANGANA</span>
+     
+    </section>
+
+
+    <section class="section section2" id="section2">
+      <div class="containsec2">
+          <!-- <video autoplay loop muted plays-inline class="videowrapper" class="aboutVid">
+              <source src="./Images/video_section-2.mp4.mp4" type="video/mp4">
+          </video> -->
+          <!-- <div class="video-about"> -->
+            <video class="vidsec2" autoplay muted loop plays-inline id="about-video" >
+              <source src="Images/video_section-2.mp4 - Trim.mp4" type="video/mp4">
+            </video>
+          <div class="overlay-about">
+        <!-- <p class="section-2_para">
+          <strong>Taarangana</strong>, the annual cultural fest of IGDTUW, is not just a name, it is an emotion that brings
+          us all together.
+          The festival carves out a niche for itself because of the resolute women driving it.<br>
+          After nine massively successful editions,
+          the cultural extravaganza is all set to return in February with its 10th edition, Taarangana'23. 
+          A spectacle to behold, Taarangana witnesses a gathering of zealous students from various colleges across the 
+          city who meet, mingle, and share artistic and 
+          intellectual interests while making precious memories.
+          Through a wide variety of events in music, dance, theatre, and other artistic domains, this two-day cultural 
+          blast offers innovative students an opportunity and platform to showcase their astounding talents, turning the
+           campus into an ocean of culture, excitement, and opportunities.
+          The main aim of Taarangana has always been to bring out the best talents and showcase them to the world, 
+          and we are more prepared than ever before.
+        </p>  -->
+        <p class="sec2para"><strong>Taarangana</strong>, the annual cultural fest of IGDTUW, is not just a name, it is an emotion that brings
+          us all together.
+          The festival carves out a niche for itself because of the resolute women driving it.<br>
+          After nine massively successful editions,
+          the cultural extravaganza is all set to return in February with its 10th edition, Taarangana'23. 
+          A spectacle to behold, Taarangana witnesses a gathering of zealous students from various colleges across the 
+          city who meet, mingle, and share artistic and 
+          intellectual interests while making precious memories.
+          Through a wide variety of events in music, dance, theatre, and other artistic domains, this two-day cultural 
+          blast offers innovative students an opportunity and platform to showcase their astounding talents, turning the
+           campus into an ocean of culture, excitement, and opportunities.
+          The main aim of Taarangana has always been to bring out the best talents and showcase them to the world, 
+          and we are more prepared than ever before.</p>
+      </div>
+      </div>
+    </section>
+
+    <section class="section section3" id="section3">
+      <div id="drag-container">
+        <div id="spin-container">
+          <!-- Add your images (or video) here -->
+          <img src="./Images/zakir.jpeg" alt="">
+          <img src="./Images/darshan.jpeg" alt="">      
+          <img src="./Images/rahul_dua.jpeg" alt="">
+          <img src="./Images/darshan stage.jpg" alt="">
+          <img src="./Images/drums2.jpg" alt="">
+          <img src="./Images/moctave.JPG" alt="">
+          
+          <!-- Example image with link 
+          <a target="_blank" href="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg">
+            <img src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+          </a>-->
+      
+          <!-- Example add video  -->
+          <video width="320" height="240" autoplay muted>
+            <source src="./Images/DARSHAN RAVAL.mp4" type="video/mp4">
+          </video>
+          
+          <!-- Text at center of ground -->
+          <p>Taranaganna </p>
+        </div>
+        <div id="ground"></div>
+      </div>
+      
+    </section>
+
+    <section class="section section4" id="section4">
+      Section 4
+    </section>
+
+   <!--  <section class="section section5" id="section5">
+      Section 5
+    </section>
+
+    <section class="section section6" id="section6">
+      Section 6
+    </section> -->
+
+
+  </div>
+  <script>
+
+    <!---code for smooth scrolling sections--->
+    $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
+  </script>
+</body>
+</html>
+<script src="./index.js"></script>
+<!-- image -->
