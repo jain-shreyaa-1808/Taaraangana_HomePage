@@ -850,8 +850,8 @@ h1 {
   font-weight: 400;
   /* height: inherit; */
 
-  color: #fff;
-  text-shadow: 0 0 5px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6;
+  color: #fff6a9;
+  text-shadow: 0 0 5px #ff8d00a3, 0 0 10px #555, 0 0 10px #333, 0 0 10px #333;
 
  }
 .section-2_para
@@ -918,6 +918,7 @@ h1 {
     }
 
     .sec2para{
+      margin-top: 22%;
       font-size: 0.4em;
       height: inherit;
     }
