@@ -389,7 +389,7 @@ section:nth-child(4) {
 
 } 
 section:nth-child(5) {
-  background: #9B59B6;
+  background-image: url('./Images/earth-g929af532f_1920.jpg');
 }
 /*section:nth-child(6) {
   background: #03C9A9;
@@ -975,3 +975,38 @@ h1 {
   }
 
 /* ----About section ends------------- */
+
+
+/*section-4 css*/
+
+.sec4-para
+{
+  padding-left: auto;
+  font-size: 30px;
+   width: 40vw;
+  height: inherit;
+  color: #fff6a9;
+  text-shadow: 0 0 5px #ff8d00a3, 0 0 10px #555, 0 0 10px #333, 0 0 10px #333;
+  font-weight: 400;
+}
+
+@media (max-width: 992px){
+  .sec4-para
+{
+  font-size: 30px;
+  width: 40vw;
+  text-align: center;
+ 
+}
+}
+
+.sec4-video
+{
+  height: inherit;
+    width: 40vw;
+    text-align: center;
+    padding: auto;
+}
+
+
+
