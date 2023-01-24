@@ -28,16 +28,17 @@ overflow-x: hidden;
   position: absolute;
   top: 50%;
   bottom:50%;
-  right: 5%;
-  padding-top: 20%;
+  right: 9%;
+  padding-top: 14%;
   transform: translate(-50%, -50%);
-  width: 50px;
+  width: 30px;
+ 
 }
 
 .btn {
-  width: 80px;
-  height: 80px;
-  margin: 40px;
+  width: 70px;
+  height: 70px;
+  margin: 20px;
   outline: none;
   border: none;
   color : black;
@@ -54,6 +55,29 @@ overflow-x: hidden;
   background: linear-gradient(45deg, #f06, yellow);
   color: white;
   animation-iteration-count: infinite;
+}
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.21);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media only screen and(min-width: 992px ){
+  .icons{
+    margin: auto;
+    width: 90%;
+    
+  }
+  .btn{
+    width:50px;
+    width:50px;
+  }
 }
 @keyframes pulse {
   from {
