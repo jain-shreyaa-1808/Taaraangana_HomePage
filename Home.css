@@ -981,32 +981,41 @@ h1 {
 
 .sec4-para
 {
-  padding-left: auto;
-  font-size: 30px;
+  float: left;
+  font-size: 20px;
    width: 40vw;
-  height: inherit;
+  height: fit-content;
   color: #fff6a9;
   text-shadow: 0 0 5px #ff8d00a3, 0 0 10px #555, 0 0 10px #333, 0 0 10px #333;
   font-weight: 400;
-}
-
-@media (max-width: 992px){
-  .sec4-para
-{
-  font-size: 30px;
-  width: 40vw;
-  text-align: center;
- 
-}
+  margin-left: 10%;
 }
 
 .sec4-video
 {
-  height: inherit;
-    width: 40vw;
-    text-align: center;
-    padding: auto;
+    float: right;
+    height: inherit;
+    width: 100%;
+    /* padding: 10px 70px;*/
 }
+
+
+@media only screen and (max-width: 800px) {
+  .sec4-para{
+    margin-top: 25%;
+    font-size: 30%;
+    height: 10px;
+    text-align: start;
+    width: fit-content;
+  }
+  .sec4-vedio
+{
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+ 
+}
+} 
 
 
 
