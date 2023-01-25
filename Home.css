@@ -949,6 +949,7 @@ h1 {
       /*bottom: 750px;*/
     
   }
+  
 
   .videowrapper{
       position: relative;
@@ -992,8 +993,8 @@ h1 {
     }
 
     .sec2para{
-      margin-top: 25%;
-      font-size: 0.4em;
+      margin-top: 20%;
+      font-size: 30%;
       height: inherit;
     }
   }
@@ -1003,27 +1004,54 @@ h1 {
 
 /*section-4 css*/
 
+.section-4
+{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.sec4-video
+{
+  display: block;
+  margin: auto;
+    width: 105%;
+    /* padding: 10px 70px;*/
+}
+
 .sec4-para
 {
-  float: left;
-  font-size: 20px;
+  text-align: center;
+  margin-left: 5%;
+  font-size: 60%;
    width: 40vw;
   height: fit-content;
   color: #fff6a9;
   text-shadow: 0 0 5px #ff8d00a3, 0 0 10px #555, 0 0 10px #333, 0 0 10px #333;
   font-weight: 400;
-  margin-left: 10%;
 }
 
-.sec4-video
+@media (max-width: 800px) {
+  .section-4 {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .sec4-para{
+    margin-top: -23%;
+    font-size: 20%;
+    text-align: start;
+    width: fit-content;
+  }
+  .sec4-vedio
 {
-    float: right;
-    height: inherit;
-    width: 100%;
-    /* padding: 10px 70px;*/
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+  width: 75%;
+ 
+}
 }
 
-
+/*
 @media only screen and (max-width: 800px) {
   .sec4-para{
     margin-top: 25%;
@@ -1040,6 +1068,6 @@ h1 {
  
 }
 } 
-
+*/
 
 
