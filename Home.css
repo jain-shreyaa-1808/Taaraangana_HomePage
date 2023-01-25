@@ -681,6 +681,17 @@ h1 {
   text-align: center;
   align-items: center;
   right: -200vw;
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  background: rgba(0, 0, 0, 0.863);
+  backdrop-filter: blur(8px);
+   z-index: 1;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .nav_ani ul {
@@ -923,7 +934,9 @@ h1 {
   font-size: 2.5vh;
   font-weight: 400;
   /* height: inherit; */
-
+  background-color: #000;
+  opacity: 0.75;
+  padding: 3%;
   color: #fff6a9;
   text-shadow: 0 0 5px #ff8d00a3, 0 0 10px #555, 0 0 10px #333, 0 0 10px #333;
 
@@ -995,7 +1008,10 @@ h1 {
     .sec2para{
       margin-top: 20%;
       font-size: 30%;
-      height: inherit;
+      /* height: inherit; */
+      background-color: #000;
+  opacity: 0.75;
+  /* padding: 3%; */
     }
   }
 
