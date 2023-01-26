@@ -26,15 +26,19 @@ body,html{
   }
   .icons {
     position: absolute;
-    top: 50%;
-    bottom:50%;
+    display: flex;
+    flex-direction: column;
+    top: 50vh;
+/*    bottom:50%;*/
     right: 9%;
-    padding-top: 14%;
+/*    padding-top: 14%;*/
     transform: translate(-50%, -50%);
     width: 30px;
    
   }
-  
+  .btn:first-child{
+    margin-top: 0;
+  }
   .btn {
     width: 70px;
     height: 70px;
@@ -46,6 +50,10 @@ body,html{
     box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #ffffff;
     border-radius: 50%;
     transition: 0.2;
+  }
+
+  .btn i{
+    font-size: 35px;
   }
   
   .btn:hover {
@@ -68,15 +76,19 @@ body,html{
     }
   }
   
-  @media only screen and(min-width: 992px ){
-    .icons{
+  @media screen and (max-width: 600px ){
+   /* .icons{
       margin: auto;
       width: 90%;
       
-    }
+    }*/
     .btn{
-      width:50px;
-      width:50px;
+      width:40px;
+      height:40px;
+    }
+
+    .btn i {
+      font-size: 20px;
     }
   }
   @keyframes pulse {
@@ -783,27 +795,42 @@ body,html{
       position: relative;
     }
   }
+
+  .logo-container{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin:auto;
+    top: 15px;
+    left: 25px;
+    align-content: center;
+    justify-content: center;
+  }
   .logo{
     border-radius: 50%;
-    position: fixed;
-    left: 67px;
-    top: 25px;
+    margin-left:15px ;
+/*    position: fixed;*/
+    /*left: 67px;
+    top: 25px;*/
     z-index: 100;
   }
   .logo1{
     border-radius: 50%;
-    position: fixed;
+    
+    /*position: fixed;
     left: 17px;
-    top: 25px;
+    top: 25px;*/
     z-index: 100;
   }
   
   .logo_name{
     font-size: 0.4em;
     font-weight: 400;
-    position: fixed;
+    margin-left: 15px;
+    transform: translate(0,20%);
+    /*position: fixed;
     left: 112px;
-    top: 33px;
+    top: 33px;*/
     z-index: 100;
   }
   
