@@ -1085,7 +1085,39 @@ body,html{
       text-align: start;
       width: fit-content;
     }
-    .sec4-vedio
+    .sec4-video
+  {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    width: 75%;
+   
+  }
+  }
+  .sec4-para
+  {
+    text-align: center;
+    margin-left: 5%;
+    font-size: 60%;
+     width: 40vw;
+    height: fit-content;
+    color: #fff6a9;
+    text-shadow: 0 0 5px #ff8d00a3, 0 0 10px #555, 0 0 10px #333, 0 0 10px #333;
+    font-weight: 400;
+  }
+  
+  @media (max-width: 800px) {
+    .section-4 {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .sec4-para{
+      margin-top: -23%;
+      font-size: 20%;
+      text-align: start;
+      width: fit-content;
+    }
+    .sec4-video
   {
     position: relative;
     display: inline-block;
