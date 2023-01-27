@@ -32,7 +32,7 @@
     font-size: 4rem; 
     font-family: 'Neon Glow';
     box-shadow: black 25px;
-    color: #080808; filter: saturate(200%);
+    color: #080808; 
 }
 .popup button{
     display: block;
