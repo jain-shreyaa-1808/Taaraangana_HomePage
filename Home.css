@@ -6,6 +6,72 @@
     height: 100vh;
     width: 100vw;
 }*/
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.popup{
+  background-color: rgb(241, 239, 247);
+    opacity: 70%;
+    backdrop-filter: blur(5px);
+    z-index:200;
+    width: 800px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+     left: 50%; 
+    /*top: 20%; */
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none; 
+    text-align: center;
+    font-size: 4rem; 
+    font-family: 'Neon Glow';
+    box-shadow: black 25px;
+    color: #080808; filter: saturate(200%);
+}
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #ffffff;
+		background:  rgb(96,9,240);
+		border-radius: 100%;
+		width: 40px;
+		height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup h2{
+	margin-top: -20px;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+.popup a{
+    display: block;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    margin: 0px auto;
+    text-align: center;
+    background: rgb(96,9,240);
+    background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+		border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 0;
+    font-size: 20px;
+}
 body,html{
 width: 100%;
 overflow-x: hidden;
