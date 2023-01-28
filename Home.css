@@ -1146,24 +1146,24 @@ body,html{
   } 
   */
   
-  *{
+  #section2{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-body{
+.containsec2{
   min-height: 100vh;
-  background: #0c192c;
+  background: #020c1c14;
 }
-.container{
+.contain{
   position: relative;
-  width: 120vw;
+  width: 100vw;
   height: 100vh;
-  overflow: visible;
+  overflow: hidden;
 }
 .bubbles{
   position: relative;
-  display: flex;
+  display: inline-flex;
 }
 .bubbles span{
   position:relative;
@@ -1171,7 +1171,7 @@ body{
   height: 30px;
   background: #4fc3dc;
   margin: 0 4px;
-  border-radius: 50%;
+  border-radius: 100%;
   box-shadow: 0 0 0 10px #4fc3dc44,
   0 0 50px #4fc3dc,
   0 0 100px #4fc3dc;
