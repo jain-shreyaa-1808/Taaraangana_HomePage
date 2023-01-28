@@ -11,6 +11,8 @@ body,html{
   overflow-x: hidden;
   }
   
+  /*register button popup*/
+  
   @font-face {
     font-family: Clip;
     src: url("https://acupoftee.github.io/fonts/Clip.ttf");
