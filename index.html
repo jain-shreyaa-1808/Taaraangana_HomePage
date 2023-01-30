@@ -18,6 +18,15 @@
 
     <title>Home </title>
     <link rel="stylesheet" href="Home.css">
+  
+
+
+<!--<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>-->
+
+
 </head>
 <body data-spy="scroll" data-target="#navbar-example">
   <!-- for new pr -->
@@ -288,8 +297,7 @@
           The main aim of Taarangana has always been to bring out the best talents and showcase them to the world, 
           and we are more prepared than ever before.
         </p>  -->
-              
-          
+        
 
               
         <p class="sec2para"><strong>Taarangana</strong>, the annual cultural fest of IGDTUW, is not just a name, it is an emotion that brings
@@ -305,12 +313,57 @@
            campus into an ocean of culture, excitement, and opportunities.
           The main aim of Taarangana has always been to bring out the best talents and showcase them to the world, 
           and we are more prepared than ever before.
+          
+            <div class="contain-video">
+            <div class="row">
+              <div class="col-sm-12">
+               <div id="play-btn">
+                <p class="text-center mt-5">
+                  <a href="#headerPopup" id="headerVideoLink" target="_blank" class="btn btn-outline-danger popup-modal"></a>
+                </p>
+                
+                <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
+                  <iframe class="embed-responsive-item" width="853" height="480" src="https://www.youtube.com/watch?v=h8DLofLM7No" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
           </p>
+          
+          
+          
           <!-- for sidenav responsive control -->
           <div id="sec33" style="position: absolute; top:60vh ; visibility: hidden;"><h1>responsive marker</h1></div>
+          
       </div>
+      <!--<div class="contain-video">
+        <div class="row">
+          <div class="col-sm-12">
+           <div id="play-btn">
+            <p class="text-center mt-5">
+              <a href="#headerPopup" id="headerVideoLink" target="_blank" class="btn btn-outline-danger popup-modal"></a>
+            </p>
+            
+            <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
+              <iframe class="embed-responsive-item" width="853" height="480" src="./Images/video_section-2.mp4 - Trim.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>-->
       </div>
     </section>
+
+    <script>
+      $( document ).ready(function() {
+      $('#headerVideoLink').magnificPopup({
+      type:'inline',
+      midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+      });
+    });
+       
+    </script>
 
     <section class="section section3" id="section3">
       <div id="drag-container">
