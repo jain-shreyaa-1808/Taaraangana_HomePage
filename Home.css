@@ -473,7 +473,7 @@ body,html{
     position: relative;
     display: block;
     margin: -12% auto;
-    box-shadow: 0px 0px 25px 3px rgba(255, 0, 128, 0.8);
+    /* box-shadow: 0px 0px 25px 3px rgba(255, 0, 128, 0.8); */
   }
   
   /* triangle */
@@ -496,12 +496,12 @@ body,html{
   }
   
   /* pulse wave */
-  .play-btn:before {
-    content: "";
+  /* .play-btn:before { */
+    /* content: "";
     position: absolute;
     width: 150%;
-    height: 150%;
-    -webkit-animation-delay: 0s;
+    height: 150%; */
+    /* -webkit-animation-delay: 0s;
     animation-delay: 0s;
     -webkit-animation: pulsate1 2s;
     animation: pulsate1 2s;
@@ -516,8 +516,8 @@ body,html{
     border: 5px solid rgba(255, 255, 255, .75);
     top: -30%;
     left: -30%;
-    background: rgba(198, 16, 0, 0);
-  }
+    background: rgba(198, 16, 0, 0); */
+  /* } */
   .play-btn1
   {
     position: fixed;
@@ -563,7 +563,7 @@ body,html{
       max-width: 90% ;
     }
   }
-  @-webkit-keyframes pulsate1 {
+  /* @-webkit-keyframes pulsate1 {
     0% {
       -webkit-transform: scale(0.6);
       transform: scale(0.6);
@@ -593,7 +593,7 @@ body,html{
       box-shadow: none;
   
     }
-  }
+  } */
   @media (max-width:750px)
   {
     .play-btn
@@ -785,7 +785,7 @@ body,html{
     padding: 2px 2px;
   }
   .nav li:nth-child(4).active:after{
-    content:"Title";
+    content:"G20";
     width: fit-content;
     border-radius: 0;
     padding: 2px 2px;
