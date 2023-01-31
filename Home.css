@@ -132,8 +132,8 @@ body,html{
     margin-top: 0;
   }
   .btn {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     margin: 20px;
     outline: none;
     border: none;
@@ -594,13 +594,16 @@ body,html{
   
     }
   } */
-  @media (max-width:750px)
+  @media (max-width:800px)
   {
     .play-btn
     {
-      margin-top: -17%;
-      width: 50px;
-      height: 50px;
+/*      margin-top: -17%;*/
+      margin-top: 40px;
+      transform: translate(0,-30vh);
+
+      width: 100px;
+      height: 100px;
     }
    
   } 
@@ -1267,7 +1270,8 @@ body,html{
       }
   
       .sec2para{
-        margin-top: 20%;
+/*        margin-top: 20%;*/
+        top:270px;
         font-size: 30%;
         /* height: inherit; */
         background-color: #000;
@@ -1333,7 +1337,7 @@ body,html{
 
      .sec4-video
   {
-    margin-top: -50%;
+/*    margin-top: 20px;*/
     position: relative;
    display: inline-block;
     font-size: 0;
