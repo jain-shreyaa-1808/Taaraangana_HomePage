@@ -16,6 +16,34 @@
     box-sizing: border-box;
 }
 
+.button {
+  position: absolute;
+  height: auto;
+  z-index: 2;
+  width: 15vw;
+  padding:0.5% 0%;
+  margin-left:0vw;
+  margin-top: 52vh;
+  /* background-image: linear-gradient(to bottom, rgb(140, 0, 255),rgb(255, 0, 128),rgb(247, 0, 255),rgb(255, 0, 128),rgb(251, 255, 0)); */
+  background:  rgb(96,9,240);
+  border: none;
+  border-radius: 7%;
+  color:whitesmoke;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2vw;
+  font-weight: 13px;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px){
+  .button{
+    width: 15vw;
+    height: 5vh;
+    margin-left:0vw;
+    margin-top: 25vh;
+  }
+}
+
 .popup{
   background: rgba(0, 0,0,0.863);
   backdrop-filter: blur(8px);
@@ -1005,7 +1033,7 @@ body,html{
     position: absolute;
     width: 30px;
     height: 4px;
-    background: #fff;
+    background: black;
     transition: background .5s ease;
   }
   .nav_ani .close div::before{
@@ -1016,10 +1044,10 @@ body,html{
     transform: rotate(45deg);
   }
   
-  .nav_ani .close:hover div::before,
+/*   .nav_ani .close:hover div::before,
   .nav_ani .close:hover div::after{
     background: rgb(209, 3, 3);
-  }
+  } */
   
   @media (max-width: 992px){
     h1{
