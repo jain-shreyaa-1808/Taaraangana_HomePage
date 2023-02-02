@@ -1293,7 +1293,7 @@ body,html{
   .sec4-video
   {
     display: block;
-    margin-left: 25%;
+    margin-left: 8%;
     width: 105%;
     padding: 50px 10px;
   }
@@ -1313,7 +1313,7 @@ body,html{
     justify-content: center;
     align-items: center;
     margin-left: 20%;
-    font-size: 38%;
+    font-size: 49%;
     width: 35vw;
     color: #fff6a9;
     text-shadow: 0 0 5px #ff8d00a3, 0 0 10px #555, 0 0 10px #333, 0 0 10px #333;
