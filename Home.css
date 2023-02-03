@@ -622,13 +622,27 @@ body,html{
   
     }
   } */
-  @media (max-width:800px)
+  @media (max-width:800px)and (min-height:600px)
   {
     .play-btn
     {
 /*      margin-top: -17%;*/
       margin-top: 40px;
       transform: translate(0,-30vh);
+
+      width: 80px;
+      height: 80px;
+    }
+   
+  } 
+
+   @media (min-height:800px)and (max-width:800px)
+  {
+    .play-btn
+    {
+/*      margin-top: -17%;*/
+      margin-top: 40px;
+      transform: translate(0,-37vh);
 
       width: 100px;
       height: 100px;
@@ -1218,6 +1232,7 @@ body,html{
    .sec2para{
     position:absolute;
     top:50vh;
+    text-align: justify;
   /*  left: 50vw;*/
   /*  font-family: cursive;*/
     transform: translate(0%,-50%);
@@ -1300,7 +1315,30 @@ body,html{
       .sec2para{
 /*        margin-top: 20%;*/
         top:270px;
-        font-size: 30%;
+        font-size: 1.5vh;
+/*        min-height: 50vh;*/
+/*        height: 70vh;*/
+/*        overflow: hidden;*/
+        /* height: inherit; */
+        background-color: #000;
+        opacity: 0.75;
+      }
+    }
+
+    @media only screen and (max-width: 800px) and (min-height:800px) {
+      section:nth-child(3)
+      {
+  /*      height:1350px;*/
+          height: 100vh;
+      }
+  
+      .sec2para{
+/*        margin-top: 20%;*/
+        top:300px;
+        font-size: 1.5vh;
+/*        min-height: 50vh;*/
+/*        height: 70vh;*/
+/*        overflow: hidden;*/
         /* height: inherit; */
         background-color: #000;
         opacity: 0.75;
