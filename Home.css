@@ -930,7 +930,7 @@ body,html{
     cursor: pointer;
     position: absolute;
     padding-top: 30px;
-    right: 8%;
+    right: 5.5%;
     width: 40px;
     height: 30px;
   }
@@ -1025,7 +1025,7 @@ body,html{
     height: 40px;
     position: absolute;
     top: 6%;
-    right: 8%;
+    right: 6%;
     cursor: pointer;
     opacity: 0;
     pointer-events: none;
@@ -1058,10 +1058,10 @@ body,html{
     transform: rotate(45deg);
   }
   
-/*   .nav_ani .close:hover div::before,
+  .nav_ani .close:hover div::before,
   .nav_ani .close:hover div::after{
-    background: rgb(209, 3, 3);
-  } */
+    background: rgb(14, 215, 195);
+  }
   
   @media (max-width: 992px){
     h1{
